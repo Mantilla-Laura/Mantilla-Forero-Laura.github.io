@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Javascript Parameters</title>
+        <script>
+             function multiplyThis(height, width, length) {
+                 var x = 3;
+                 var y = x + 8;
+                 var width = parseFloat(document.getElementById("w").value);
+                 var length = parseFloat(document.getElementById("l").value);
+                 var height = heightFunction(x, y);
+                 var finalResult = height * width * length;
+
+                 document.getElementById("outputDiv").innerHTML=finalResult;
+             }
+
+             function heightFunction(x, y) {
+                 var total = x + y;
+                 return total;
+             }
+             
+        </script>
+    </head>
+    <body>
+        <h1>Parameters</h1>
+        <p>Multiply the height, with, and lenght of an object when the height is given.</p>
+        Height: 14<br>
+        Width: <input type="text" id="w" size="3"><br>
+        Length: <input type="text" id="l" size="3"><br>
+        <button type="button" onclick="multiplyThis()">Multiply</button><br>
+        Total = <div id="outputDiv"></div>
+    </body>
+</html>

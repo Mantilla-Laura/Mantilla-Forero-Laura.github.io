@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Javascript Conditional Statements</title>
+        <script>
+            function youngWomen() {
+            var woman = document.getElementById("w").value;
+            var answer;
+            if (woman < 12) {
+                answer= document.write ("You are not a Young Women yet");
+            }
+            else if (woman < 14) {
+                answer= document.write ("You are a Beehive");
+            }
+            else if (woman < 16) {
+                answer = document.write ("You are a Mia Maid");
+            }
+            else if (woman < 18) {
+                answer = document.write ("You are a Laurel");
+            }
+            else {
+                answer = document.write ("You are not part of the Young Women anymore")
+            }
+            }
+            document.getElementById("outputDiv").innerHTML = answer; 
+        </script>
+    </head>
+    <body>
+        <h1>Are you part of the LDS Young Women?</h1>
+        Your age: <input type="text" id="w" size="3"><br>
+        <button type="button" onclick="youngWomen()">Click here</button><br>
+        <div id="outputDiv"></div>
+    </body>
+</html>
