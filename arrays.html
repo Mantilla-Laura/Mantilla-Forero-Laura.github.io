@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="maincss.css">
+        <title>Arrays</title>
+        <script>
+            function sumNumbers(list) {
+                var output= parseFloat(document.getElementById("tNumber").value);
+                for (var i = 0; i<list.lenght; i++) {
+                    output+=list[i];
+                }
+                return output;
+
+                document.getElementById("outputDiv").innerHTML=output;
+            }
+        </script>
+    </head>
+    <body>
+        <h1>Arrays Used Here</h1>
+        <p>List of numbers that finishes with the number you type in.</p>
+        Number from 0 to 100: <input type="text" id="tNumber"><br>
+        <button type="button" onclick="sumNumbers(list)">Get List</button><br>
+        <div id="outputDiv"></div>
+    </body>
+</html>
