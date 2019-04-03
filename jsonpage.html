@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: #227aee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h1 {
+            font-family: cursive;
+            font-size: 58px;
+        }
+        img {
+            width: 300px;
+            height: 400px;
+        }
+        section {
+            display: flex;
+            flex-flow: row;
+            border: 2em double #ffffff;
+            padding: 2em;
+        }
+        div {
+            margin-left: 1em;
+            margin-top: 1em;
+        }
+    </style>
+    <title>Profiles | JSON Parse</title> 
+  </head>
+  <body>
+    <h1>People's Profiles with JSON Parse</h1>
+    <section>
+    <img src="images/richard.jpg" alt="Blonde guy with glasses">
+    <div id="demo1"></div>
+    </section>
+    <section>
+    <img src="images/dhylan.jpg" alt="Guy smiling">
+    <div id="demo2"></div>
+    </section>
+    <section>
+    <img src="images/isabella.jpg" alt="girl smiling on a green field">
+    <div id="demo3"></div>
+    </section>
+    <section>
+    <img src="images/wendy.jpg" alt="Blonde girl smiling on a dark background">
+    <div id="demo4"></div>
+    </section> 
+
+<script>
+var txt1 = '{"name":"Richard", "age":25, "city":"New York", "hobbies":"Ski, Theater, and Reading"}';
+var obj1 = JSON.parse(txt1);
+document.getElementById("demo1").innerHTML = "Name: " + obj1.name + "<br> " + "Age: " + obj1.age + "<br>" + "City: " + obj1.city + "<br>" + "Hobbies: " + obj1.hobbies;
+
+var txt2 = '{"name":"Dhylan", "age":20, "city":"Los Angeles", "hobbies":"Basketball, Writing Poetry, and Walking"}';
+var obj2 = JSON.parse(txt2);
+document.getElementById("demo2").innerHTML = "Name: " + obj2.name + "<br> " + "Age: " + obj2.age + "<br>" + "City: " + obj2.city + "<br>" + "Hobbies: " + obj2.hobbies;
+
+var txt3 = '{"name":"Isabella", "age":23, "city":"Seattle", "hobbies":"Reading, Writing Storytales, and Photography"}';
+var obj3 = JSON.parse(txt3);
+document.getElementById("demo3").innerHTML = "Name: " + obj3.name + "<br> " + "Age: " + obj3.age + "<br>" + "City: " + obj3.city + "<br>" + "Hobbies: " + obj3.hobbies;
+
+var txt4 = '{"name":"Wendy", "age":26, "city":"Boston", "hobbies":"Dancing, Basketball, and Singing"}';
+var obj4 = JSON.parse(txt4);
+document.getElementById("demo4").innerHTML = "Name: " + obj4.name + "<br> " + "Age: " + obj4.age + "<br>" + "City: " + obj4.city + "<br>" + "Hobbies: " + obj4.hobbies;
+</script>
+ 
+  </body>
+  </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Profiles | JSON String</title>
+</head>
+<body>
+    <h1>People's profiles JSON Sting</h1>
+
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <p id="demo3"></p>
+    <p id="demo4"></p>
+
+<script>
+var obj1 = {name:"Richard", age:25, city:"New York", hobbies:"Ski, Theater, and Reading"};
+var JSON1 = JSON.stringify(obj1);
+document.getElementById("demo1").innerHTML = JSON1; 
+
+var obj2 = {name:"Dhylan", age:20, city:"Los Angeles", hobbies:"Basketball, Writing Poetry, and Walking"};
+var JSON2 = JSON.stringify(obj2);
+document.getElementById("demo2").innerHTML = JSON2;
+
+var obj3 = {name:"Isabella", age:23, city:"Seattle", hobbies:"Reading, Writing Storytales, and Photography"};
+var JSON3 = JSON.stringify(obj3);
+document.getElementById("demo3").innerHTML = JSON3;
+
+var obj4 = {name:"Wendy", age:26, city:"Boston", hobbies:"Dancing, Basketball, and Singing"};
+var JSON4 = JSON.stringify(obj4);
+document.getElementById("demo4").innerHTML = JSON4;
+</script>
+
+</body>
+</html>
