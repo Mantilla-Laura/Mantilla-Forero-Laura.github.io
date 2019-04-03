@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+    body {
+        background-color: #f7deee;
+        display:flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    h1 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+        font-size: 75px;
+
+    }
+    div {
+        display: flex;
+        flex-flow: column wrap;
+        margin-top: 170px;
+        align-items: right;
+    }
+    img {
+        width: 300px;
+        border: 6px solid #ee9357;
+        border-radius: 3px;
+    }
+    button {
+        width: 200px;
+        margin-left: 50px;
+    }
+    p {
+        width: 300px;
+        margin-left: 20px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 16px;
+    }
+</style>
+<h1>JavaClothes</h1>
+<div>
+<img src="images/dressimage.jpg">
+<button onclick="dress()">Get the details</button>
+<p id="demo"></p>
+<p id="demo2"></p>
+<p id="demo3"></p>
+</div>
+
+<div>
+    <img src="images/skirtimage.jpg">
+    <button onclick="skirt()">Get the details</button>
+    <p id="demo4"></p>
+    <p id="demo5"></p>
+    <p id="demo6"></p>
+</div>
+
+<div>
+    <img src="images/shirtimage.jpg">
+    <button onclick="shirt()">Get the details</button>
+    <p id="demo7"></p>
+    <p id="demo8"></p>
+    <p id="demo9"></p>
+</div>
+
+<div>
+    <img src="images/jeansimage.jpg">
+    <button onclick="jeans()">Get the details</button>
+    <p id="demo10"></p>
+    <p id="demo11"></p>
+    <p id="demo12"></p>
+</div>
+
+<script>
+// Create an object:
+function dress() {
+var dress = {name:"Vintage Dress", price:"$40 USD", color:"white, green, black"};
+
+// Display some data from the object:
+document.getElementById("demo").innerHTML = "The dress is a " + dress.name;
+document.getElementById("demo2").innerHTML = "The price is " + dress.price;
+document.getElementById("demo3").innerHTML = "The colors available are " + dress.color;
+}
+
+function skirt() {
+var skirt = {name:"Elegant Skirt", price:"$30 USD", color:"white, grey, black, blue"};
+
+// Display some data from the object:
+document.getElementById("demo4").innerHTML = "The product is an " + skirt.name;
+document.getElementById("demo5").innerHTML = "The price is " + skirt.price;
+document.getElementById("demo6").innerHTML = "The colors available are " + skirt.color;
+}
+
+function shirt() {
+var shirt = {name:"Pretty T-shirt", price:"$28 USD", color:"white, pink, ligth blue, grey"};
+
+// Display some data from the object:
+document.getElementById("demo7").innerHTML = "The product is a " + shirt.name;
+document.getElementById("demo8").innerHTML = "The price is " + shirt.price;
+document.getElementById("demo9").innerHTML = "The colors available are " + shirt.color;
+}
+
+function jeans() {
+var jeans = {name:"Comfy Jeans", price:"$35 USD", color:"light blue, dark blue, black"};
+
+// Display some data from the object:
+document.getElementById("demo10").innerHTML = "The product is named " + jeans.name;
+document.getElementById("demo11").innerHTML = "The price is " + jeans.price;
+document.getElementById("demo12").innerHTML = "The colors available are " + jeans.color;
+}
+
+</script>
+
+</body>
+</html>
